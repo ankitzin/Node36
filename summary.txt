@@ -1,0 +1,10 @@
+const http = require('http') // look http globally
+const http = rquire('./http') // look for http.js file in current directory
+http.createServer((req,res) =>{
+    console.log(req)
+})
+http.listen(3000)
+http.createServer(function runServer(req,res){
+    console.log(req)
+})
+http.listen(3001)
